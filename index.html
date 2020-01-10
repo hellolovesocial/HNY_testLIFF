@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LIFF LIVE CODING</title>
+    <title>HAPPY NEW YEAR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       .btn {
@@ -23,8 +23,8 @@
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   </head>
   <body>
-    <h1>LIFF LIVE CODING</h1>
-    <h2>Minako's Page!!</h2>
+    <h1>HAPPY NEW YEAR</h1>
+    <h2>LIFFtest's Page!</h2>
     <div class="flex">
       <button class="btn" id="showProfile">showProfile</button>
       <button class="btn" id="sendMessage">sendMessage</button>
@@ -38,8 +38,7 @@
     // My LIFF ID
     const liffId = "1653746756-2Lrl3yld"
     // Text I want to send
-    const text = "You've successfully sent a message! Hooray!"
-    // Containers displaying profile information
+    const text = "I successfully sent a message!"
     const Name = document.querySelector('profile_name');
     const Img = document.querySelector("profile_img");
 
@@ -57,7 +56,6 @@
 
     liff.init({liffId}).then(() => {
       if (liff.isLoggedIn()) {
-        liff.login();
       }
       else{
         liff.login();
